@@ -60,9 +60,9 @@ struct ContentView: View {
                 
                 
                 Button("Submit Selection"){
-                    print("Player selection is: ", playerSelection)
-                    print("iOS Selection is: ", rockPaperScissors[phoneSelection])
-                    print("Phone selection int is: \(phoneSelection)")
+                    //print("Player selection is: ", playerSelection)
+                    //print("iOS Selection is: ", rockPaperScissors[phoneSelection])
+                    //print("Phone selection int is: \(phoneSelection)")
                     
                     choiceCompare(iOS: rockPaperScissors[phoneSelection], player: playerSelection, winLoose: choice)
                     
@@ -81,7 +81,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.black)
                 .buttonStyle(.borderedProminent)
-                .tint(.mint)
+                .tint(.gray)
                 .padding()
                 
                 Text("Turn count: \(turns)")
